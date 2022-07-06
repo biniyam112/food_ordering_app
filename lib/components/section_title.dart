@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../theme/theme.dart';
 
@@ -23,13 +24,14 @@ class SectionTitle extends StatelessWidget {
         ),
         TextButton(
           onPressed: onPress,
-          child: const Text(
+          style: TextButton.styleFrom(primary: kActiveColor),
+          child: Text(
             'see all',
             style: TextStyle(
-              color: Color.fromARGB(255, 5, 40, 194),
+              fontFamily: GoogleFonts.poppins().fontFamily,
+              color: const Color.fromARGB(255, 5, 40, 194),
             ),
           ),
-          style: TextButton.styleFrom(primary: kActiveColor),
         ),
       ],
     );
